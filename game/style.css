@@ -1,0 +1,106 @@
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    ol {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+      background-color: #f2f2f2;
+      list-style: none;
+      counter-reset: li;
+      padding-left: 30px;
+    }
+    
+    ol li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+    
+    ol li:before {
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+    }
+    
+    /* Add some spacing between list items (optional) */
+    ol li + li {
+      margin-top: 10px;
+    }
+    .form-container {
+      margin-top: 20px;
+    }
+
+    .form-container label,
+    .form-container input,
+    .form-container button {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container input[type="text"] {
+      width: 100%;
+      padding: 8px;
+    }
+
+    .register-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .register-button:hover {
+      background-color: #45a049;
+    }
+    
+    .register-button:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Optional: If you want to add some margin or space between the button and other elements */
+    .register-button + * {
+      margin-top: 10px;
+    }
+    .refresh-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .refresh-button:hover {
+      background-color: #45a049;
+    }
+    
+    .refresh-button:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Optional: If you want to add some margin or space between the button and other elements */
+    .refresh-button + * {
+      margin-top: 10px;
+    }
+    
+    

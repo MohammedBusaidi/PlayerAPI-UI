@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Spring Pirates System</h1>
+
+      <div>
+        <h2>All Players</h2>
+        <ol id="lop"></ol>
+      </div>
+      <button onclick="window.location.reload();" class="refresh-button">Refresh</button>
+
+      <form id="playerRegForm">
+        <div class="form-container">
+          <h2>Add Player</h2>
+
+          <label>ID:</label>
+          <input type="text" id="playerID" name="playerID" placeholder="Enter Player ID">
+
+          <label>Name:</label>
+          <input type="text" id="playerName" name="playerName" placeholder="Enter Player name">
+        </div>
+        <input type="submit" value="Add Player" class="register-button">
+      </form>
+
+      <form id="playerUpdateForm">
+        <div class="form-container">
+          <h2>Update Player</h2>
+
+          <label>ID:</label>
+          <input type="text" id="playerID" name="playerID" placeholder="Enter Player ID">
+
+          <label>Name:</label>
+          <input type="text" id="updatedPlayer" name="updatedPlayer" placeholder="Enter Updated name">
+        </div>
+        <input type="submit" value="Update Player" class="register-button">
+      </form>
+
+
+      <form id="playerDelForm">
+        <div class="form-container">
+          <h2>Delete Player</h2>
+          <label>Player ID:</label>
+          <input type="text" id="deleteId" name= "deleteId" placeholder="Enter Player ID">
+        </div>
+        <input type="submit" value="Delete Player" class="register-button">
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
